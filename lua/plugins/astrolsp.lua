@@ -17,7 +17,7 @@ return {
     -- customize lsp formatting options
     formatting = {
       -- control auto formatting on save
-      format_on_save = false,
+      format_on_save = { enabled = false },
       disabled = { -- disable formatting capabilities for the listed language servers
         -- disable lua_ls formatting capability if you want to use StyLua to format your lua code
         -- "lua_ls",
@@ -47,6 +47,7 @@ return {
     },
     -- Configure buffer local auto commands to add when attaching a language server
     autocmds = {
+      eslint_fix_on_save = false,
       -- first key is the `augroup` to add the auto commands to (:h augroup)
       lsp_codelens_refresh = {
         -- Optional condition to create/delete auto command group
