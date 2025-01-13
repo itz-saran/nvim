@@ -9,6 +9,7 @@ return {
     opts = {
       ensure_installed = {
         "lua_ls",
+        "somesass_ls"
         -- add more arguments for adding more language servers
       },
     },
